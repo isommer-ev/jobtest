@@ -1,0 +1,70 @@
+{
+	"success": {
+		"error": 0,
+		"message": "SUCCESS",
+		"finishList": [{
+				"realName": "姜文杰",
+				"score": "",
+				"rate": 60,
+				"school": "东风西路小学",
+				"repeatNum": 0,
+				"needRepeat": false,
+				"hasRepeated": false
+			},
+			{
+				"realName": "叶俊泽",
+				"score": "优+",
+				"rate": 100,
+				"school": "东风西路小学",
+				"repeatNum": 0,
+				"needRepeat": false,
+				"hasRepeated": false
+			},
+			{
+				"realName": "易嘉一",
+				"score": "",
+				"rate": 80,
+				"school": "丽江小学",
+				"repeatNum": 0,
+				"needRepeat": false,
+				"hasRepeated": false
+			},
+			{
+				"realName": "曾帅涵",
+				"score": "",
+				"rate": 40,
+				"school": "丽江小学",
+				"repeatNum": 0,
+				"needRepeat": true,
+				"hasRepeated": false
+			},
+			{
+				"realName": "肖创宇",
+				"score": "优+",
+				"rate": 40,
+				"school": "丽江小学",
+				"repeatNum": 100,
+				"needRepeat": true,
+				"hasRepeated": true
+			},
+			{
+				"realName": "卢咏妍",
+				"score": "",
+				"rate": 40,
+				"school": "丽江小学",
+				"repeatNum": 100,
+				"needRepeat": false,
+				"hasRepeated": false
+			}
+		],
+		"unFinishList": [{
+			"realName": "卢妍咏",
+			"score": "",
+			"rate": 40,
+			"school": "丽江小学",
+			"repeatNum": 100,
+			"needRepeat": false,
+			"hasRepeated": false
+		}]
+	}
+}

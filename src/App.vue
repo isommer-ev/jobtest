@@ -1,32 +1,34 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <com-header v-show="path!='/detail'"></com-header>
+        <com-footer v-show="path!='/detail'"></com-footer>
+        <router-view></router-view>
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import comHeader from '@/components/comHeader/comHeader.vue'
+import comFooter from '@/components/comFooter/comFooter.vue'
+export default {
+    data(){
+        return {
+            path:''
+        }
+    },
+    watch:{
+        $route(to){
+            this.path=to.path
+        }
+    },
+    components:{
+        comHeader,
+        comFooter
     }
-  }
 }
+</script>
+
+<style lang="scss">
+    body{
+        background-color: #f2f2f2;
+    }
 </style>
